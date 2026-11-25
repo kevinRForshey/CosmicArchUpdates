@@ -1,0 +1,28 @@
+[package]
+name = "cosmic-applet-arch-updates"
+version = "0.1.0"
+edition = "2021"
+description = "COSMIC panel applet that shows the number of pending pacman/AUR updates"
+license = "Apache-2.0"
+
+[lib]
+name = "cosmic_applet_arch_updates"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cosmic-applet-arch-updates"
+path = "src/main.rs"
+
+[dependencies]
+libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = [
+    "applet",
+    "applet-token",
+    "dbus-config",
+    "multi-window",
+    "tokio",
+    "wayland",
+    "winit",
+] }
+serde = { version = "1", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"

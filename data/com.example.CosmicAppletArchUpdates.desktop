@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Arch Updates
+Comment=Shows the number of pending pacman/AUR updates in the panel
+Exec=cosmic-applet-arch-updates
+Icon=software-update-available-symbolic
+Terminal=false
+NoDisplay=true
+StartupNotify=true
+Categories=COSMIC;
+Keywords=arch;pacman;aur;updates;
+X-CosmicApplet=true
+X-HostWaylandDisplay=true
